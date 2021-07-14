@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+
+\bibitem{grathwohlNoMCMCMe2020}
+Will Grathwohl, Jacob Kelly, Milad Hashemi, Mohammad Norouzi, Kevin Swersky,
+  and David Duvenaud.
+\newblock No {{MCMC}} for me: {{Amortized}} sampling for fast and stable
+  training of energy-based models.
+\newblock {\em arXiv:2010.04230 [cs]}, October 2020.
+
+\bibitem{grathwohlYourClassifierSecretly2020}
+Will Grathwohl, Kuan-Chieh Wang, J{\"o}rn-Henrik Jacobsen, David Duvenaud,
+  Mohammad Norouzi, and Kevin Swersky.
+\newblock Your {{Classifier}} is {{Secretly}} an {{Energy Based Model}} and
+  {{You Should Treat}} it {{Like One}}.
+\newblock {\em arXiv:1912.03263 [cs, stat]}, September 2020.
+
+\bibitem{hintonTrainingProductsExperts2002}
+Geoffrey~E. Hinton.
+\newblock Training {{Products}} of {{Experts}} by {{Minimizing Contrastive
+  Divergence}}.
+\newblock {\em Neural Computation}, 14(8):1771--1800, August 2002.
+
+\bibitem{songSlicedScoreMatching2019}
+Yang Song, Sahaj Garg, Jiaxin Shi, and Stefano Ermon.
+\newblock Sliced {{Score Matching}}: {{A Scalable Approach}} to {{Density}} and
+  {{Score Estimation}}.
+\newblock {\em arXiv:1905.07088 [cs, stat]}, June 2019.
+
+\end{thebibliography}
