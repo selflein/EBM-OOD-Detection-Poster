@@ -1,4 +1,4 @@
-\documentclass[landscape,a0paper,fontscale=0.292]{baposter}
+\documentclass[landscape,a0paper,fontscale=0.30]{baposter}
 
 \usepackage[vlined]{algorithm2e}
 \usepackage{times}
@@ -12,12 +12,13 @@
 \usepackage{multirow}
 \usepackage{booktabs}
 \usepackage{natbib}
+\usepackage{tcolorbox}
 \usepackage{wrapfig}
 
 \usepackage{graphicx}
 \usepackage{multicol}
-\usepackage{helvet}
 \usepackage[T1]{fontenc}
+\usepackage{tgadventor}
 \usepackage{ae}
 \usepackage{enumitem}
 
@@ -29,7 +30,8 @@
 \setlength{\bibsep}{0.1pt}
 \newcommand{\cmark}{{\color{green}\ding{51}}}%
 \newcommand{\xmark}{{\color{red}\ding{55}}}%
-\colorlet{tumblue}{blue!80}
+\definecolor{tumblue}{rgb}{0, 0.2, 0.9}
+\definecolor{blue}{rgb}{0, 0.2, 0.9}
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -49,8 +51,8 @@
  \setlength{\parskip}{0pt}%
  \setlength{\parsep}{0pt}%
  }
-\renewcommand{\rmdefault}{ptm} % Arial
-\renewcommand{\sfdefault}{ptm} % Arial
+%\renewcommand{\rmdefault}{ptm} % Arial
+% \renewcommand{\sfdefault}{ptm} % Arial
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Begin of Document
@@ -100,7 +102,7 @@
     \includegraphics[width=\linewidth]{tables/icml_logo.png}
     \end{minipage}
     \makebox[0.02\textwidth]{} 
-    \begin{minipage}[c]{0.08\textwidth}
+    \begin{minipage}[c]{0.09\textwidth}
         \includegraphics[width=\linewidth]{Universitaet_Logo_RGB.pdf}
     \end{minipage}
  }
@@ -137,30 +139,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Experiments \& Results}{name=results,column=2,row=0,span=3}{
+\headerbox{\rmfamily Setup}{name=results,column=2,row=0,span=3}{
     \begin{minipage}[t]{0.48\linewidth}
-    \textbf{\color{blue}Differentiation of natural and non-natural dataset.}\\
-    \underline{\textit{Natural OOD}}: Requires learning semantic features to differentiate, e.g., images of classes not in training set. \\
-    \underline{\textit{Non-natural OOD}}: Requires detection farther from the training data manifold, e.g., noise, OODomain
+    \textbf{\color{blue}Natural and non-natural datasets.}
+    \underline{\textit{Natural datasets}}, e.g., images of other classes, require learning semantic features to differentiate.
+    \underline{\textit{Non-natural datasets}}, e.g., noise, require detection farther from the training data manifold.\\
+    \textbf{\color{blue}OOD detection eval.}
+    We compute the density \(p_\theta(\mathbf{x})\) and treat ID data as class 1 and OOD data as class 0 to compute AUC-PR\@.
 
-    \vspace{1em}
+    \vspace{1.5em}
 
+    {\Large \rmfamily \textsc{Experiments \& Results}}
+
+    \vspace{0.5em}
     \textbf{\color{blue}Are EBMs better than Normalizing Flows?}\\
-    EBMs do not consistently outperform Normalizing Flows across different training methods (Improvements: CD \(11.9\% \), VERA \(4.3\% \), SSM \(-4.3\% \)) \\
-    \(\rightarrow \) Dimensionality reduction is not significant
-    
+    EBMs do not consistently outperform Normalizing Flows across different training methods (Improvements: CD \(11.9\% \), VERA \(4.3\% \), SSM \(-4.3\% \))
 
     \vspace{1em}
 
     \textbf{\color{blue}Does supervision improve OOD detection?}\\
     Use Joint Energy model (JEM) which incorporates supervision through cross-entropy objective.
     \begin{center}
-        \resizebox{.5\textwidth}{!}{
+        \resizebox{.45\textwidth}{!}{
             \input{tables/rel_improvement_supervised}
         }
         \vspace{0.5em}
 
-        \% improvement in AUC-PR
+        {\small \% improvement in AUC-PR}
     \end{center}
     \begin{itemize}
         \item Supervision improves some results significantly on \textit{natural} OOD datasets, but degrade on \textit{non-natural} datasets. 
@@ -176,7 +181,7 @@
     \hfill
     \begin{minipage}[t]{.48\linewidth}
         \textbf{\small \color{blue}Sidestepping tuning of \(\boldsymbol{\gamma} \)}\\
-        Intoduce supervision indirectly by training on embeddings obtained from classification model.
+        Introduce supervision indirectly by training on embeddings obtained from a classification model.
         \begin{center}
         \resizebox{0.5\textwidth}{!}{
         \input{tables/rel_improvement_embedded}
@@ -187,7 +192,7 @@
         \end{center}
         \begin{itemize}
             \item OOD detection significantly improves on \textit{natural} and in cases on \textit{non-natural} datasets
-            \item Shows that vanilla EBMs struggle to extract high-level, semantic features
+            \item Shows that vanilla \textbf{EBMs struggle to extract high-level, semantic features}
         \end{itemize}
 
         \vspace{1em}
@@ -202,15 +207,17 @@
 
         \% improvement in AUC-PR
         \end{center}
+        \vspace{0.45em}
+
         \begin{itemize}
             \item OOD detection improves consistently upon the baseline EBMs by learning higher-level features
-            \item The difference in density assigned for low-level features to images increases significantly
+            \item The difference in density assigned for low-level features compared to images increases significantly
         \end{itemize}
-        \vspace{2mm}
+        \vspace{1.7em}
         \begin{minipage}[b]{0.5\linewidth}
             \begin{center}
             \resizebox{\textwidth}{!}{
-                \includegraphics[width=\linewidth]{tables/no_bottleneck_pooling_density_histogram.png}
+                \includegraphics[width=1.1\linewidth]{tables/no_bottleneck_pooling_density_histogram.png}
             }
             No Bottleneck.
             \end{center}
@@ -219,7 +226,7 @@
         \begin{minipage}[b]{0.5\linewidth}
             \begin{center}
             \resizebox{\textwidth}{!}{
-                \includegraphics[width=\linewidth]{tables/bottleneck_pooling_density_histogram.png}
+                \includegraphics[width=1.1\linewidth]{tables/bottleneck_pooling_density_histogram.png}
             }
             With Bottleneck.
             \end{center}
@@ -229,7 +236,7 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{What is an energy-based model?}{name=abstract,column=0,below=contribution,span=2}{
+\headerbox{\rmfamily What is an energy-based model?}{name=abstract,column=0,below=contribution,span=2}{
     EBM defines a probability distribution over the data \(\mathbf{x} \in \mathbb{R}^D \) through the energy function \( E_\theta \) as
 
     \begin{equation}
@@ -270,8 +277,6 @@
         % %
         % using~\ref{eq:jem_p_y_given_x} and~\ref{eq:jem_p_x}. In particular, we use a Cross Entropy objective to optimize \(\smash{p_\theta(y \mid x)}\) weighted with hyperparameter \(\gamma \). \\
         %
-       % \textbf{OOD Detection.}\\ 
-       % For OOD detection, we compute the density \(p_\theta(x)\) at the considered datapoint \(x\). We treat ID data as class 1 and OOD data as class 0 and compute AUC-PR.
     \vspace{1em}
     {\bf\color{blue} Properties:}
 
@@ -290,60 +295,71 @@
     \end{minipage}
 }
 
-\headerbox{Why study EBMs for OOD detection?}{name=motivation,column=0,below=abstract,span=2}{
+\headerbox{\rmfamily Why study EBMs for OOD detection?}{name=motivation,column=0,below=abstract,span=2}{
     \begin{itemize}
-        \item Recent research on density estimation focuses on exact likelihood methods.
-        \item Findings of superior OOD detection performance of EBMs without analysis in JEMs~\cite{grathwohlYourClassifierSecretly2020}.
+        \item Recent research on generative models for OOD detection focuses on exact likelihood methods, e.g., Normalizing Flows \\
+        \(\rightarrow \) We compare behavior for EBMs vs. Normalizing Flows
+        \item EBMs show good OOD detection capabilities~\cite{grathwohlYourClassifierSecretly2020}, however, no detailed analysis has been done \\
+        \(\rightarrow \) We consider EBMs trained with different approaches \\
+        \(\rightarrow \) We investigate influences like supervision, dimensionality reduction, and architecture
     \end{itemize} 
 
-    \vspace{1em}
-    {\bf\color{blue} \(\rightarrow \) Hypotheses for better OOD detection vs. Normalizing Flows:}
+    % \vspace{1em}
+    % {\bf\color{blue} \(\rightarrow \) Hypotheses for better OOD detection vs. Normalizing Flows:}
     % \begin{itemize}
     %     \item \textbf{Dimensionality reduction}: Normalizing Flows operate in original data space, 
     %     \item Supervision: JEMs \cite{grathwohlYourClassifierSecretly2020} introduce supervision into EBMs, while it is not considered for Normalizing Flows.
     %}\end{itemize}
 
-    \begin{center}
-    \begin{tabular}{lll}
-                            & \textbf{Normalizing Flows}              & \textbf{EBM}                  \\
-    \midrule
-    \textbf{Dimensionality reduction} & Operate in \(\mathbb{R}^D\) &  \(E_\theta : \mathbb{R}^D \mapsto \mathbb{R}\) \\
-    \textbf{Supervision}              & Not considered                 & Used in JEM~\cite{grathwohlYourClassifierSecretly2020}         
-    \end{tabular}%
-    \end{center}
+    %\begin{center}
+    %\begin{tabular}{lll}
+    %                        & \textbf{Normalizing Flows}              & \textbf{EBM}                  \\
+    %\midrule
+    %\textbf{Dimensionality reduction} & Operate in \(\mathbb{R}^D\) &  \(E_\theta : \mathbb{R}^D \mapsto \mathbb{R}\) \\
+    %\textbf{Supervision}              & Not considered                 & Used in JEM~\cite{grathwohlYourClassifierSecretly2020}         
+    %\end{tabular}%
+    %\end{center}
 }
 
-\headerbox{How to train an EBM?}{name=training,column=0,below=motivation,span=2}{
-    Since maximum likelihood training is not possible, we consider three different approaches:\\
-    %
-    \textbf{Sliced score matching (SSM)~\cite{songSlicedScoreMatching2019}.}
+\headerbox{\rmfamily How to train an EBM?}{name=training,column=0,below=motivation,span=2}{
+    We consider three approaches to train EBMs.
+    
+    \vspace{0.5em}
+
+    \textbf{\color{blue} Sliced score matching (SSM)~\cite{songSlicedScoreMatching2019}.}
     Efficient update formula based on random projection
     
     \begin{equation}
-        \mathbb{E}_{p_v} \mathbb{E}_{p(x)} \left[v^T \nabla_x s_\theta(x)v + \frac{1}{2} \lVert s_\theta(x) \rVert^2_2 \right] \nonumber
+        \mathbb{E}_{p_\mathbf{v}} \mathbb{E}_{p(\mathbf{x})} \left[\mathbf{v}^T \nabla_\mathbf{x} s_\theta(\mathbf{x})\mathbf{v} + \frac{1}{2} \lVert s_\theta(\mathbf{x}) \rVert^2_2 \right] \nonumber
     \end{equation}
 
-    where \(s_\theta(x) = \nabla_x p_\theta(x)\) and \(v \sim p_v\) is a simple distribution of random vectors. \\
+    where \(s_\theta(\mathbf{x}) = \nabla_\mathbf{x} p_\theta(\mathbf{x})\) and \(\mathbf{v} \sim p_\mathbf{v}\) is a simple distribution of random vectors. \\
     %
-    \textbf{Contrastive divergence (CD)~\cite{hintonTrainingProductsExperts2002}.}
+    
+    \vspace{0.5em}
+
+    \textbf{\color{blue} Contrastive divergence (CD)~\cite{hintonTrainingProductsExperts2002}.}
     Approximation of the gradient of the maximum likelihood objective by
     %
     \begin{equation}
     \label{eq:cd}
-        \nabla_\theta p_\theta(x) = \mathbb{E}_{p_\theta(x^\prime)} \left[ \nabla_\theta E_\theta(x^\prime) \right] - \nabla_\theta E_\theta(x) \nonumber
+        \nabla_\theta p_\theta(\mathbf{x}) = \mathbb{E}_{p_\theta(\mathbf{x}^\prime)} \left[ \nabla_\theta E_\theta(\mathbf{x}^\prime) \right] - \nabla_\theta E_\theta(\mathbf{x}) \nonumber
     \end{equation}
     %
-    \textbf{VERA~\cite{grathwohlNoMCMCMe2020}.}
+    
+    \vspace{0.5em}
+
+    \textbf{\color{blue}VERA~\cite{grathwohlNoMCMCMe2020}.}
     Learn the parameters \(\phi \) of a auxiliary distribution \(q_\phi \) as the optimum of
     %
     \begin{equation}
-        \log Z(\theta) = \max_{q_\phi} \mathbb{E}_{q_\phi(x)} \left[ f_\theta(x) \right] + H(q_\phi) \nonumber
+        \log Z(\theta) = \max_{q_\phi} \mathbb{E}_{q_\phi(\mathbf{x})} \left[ f_\theta(\mathbf{x}) \right] + H(q_\phi) \nonumber
     \end{equation}
     %
-    which can be plugged into~\ref{eq:ebm} to obtain an alternative method for training EBMs with a variational approximation to estimate the entropy term \(H(q_\phi)\).\\
+    which can be plugged into Eq. (1) to obtain an alternative method for training EBMs with a variational approximation to estimate the entropy term \(H(q_\phi)\).\\
 }
 
-\headerbox{References}{name=references,column=2,below=results,span=3}{
+\headerbox{\rmfamily References}{name=references,column=2,below=results,span=3}{
     \footnotesize{
     \bibliography{paper}
     }

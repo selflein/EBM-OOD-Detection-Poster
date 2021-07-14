@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.5.1)  14 JUL 2021 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.5.1)  14 JUL 2021 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -317,8 +317,8 @@ File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
 Paperwidth=2392.87677pt
 Paperheight=3383.03267pt
-BasePaperwidth=698.73782pt
-BasePaperheight=987.87073pt
+BasePaperwidth=717.87033pt
+BasePaperheight=1014.92012pt
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -493,44 +493,64 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip90
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count296
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2020/04/28 version 4.30 text color boxes
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks35
+\verbatim@line=\toks36
+\verbatim@in@stream=\read3
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count297
+)
+\tcb@titlebox=\box70
+\tcb@upperbox=\box71
+\tcb@lowerbox=\box72
+\tcb@phantombox=\box73
+\c@tcbbreakpart=\count298
+\c@tcblayer=\count299
+\c@tcolorbox@number=\count300
+\tcb@temp=\box74
+\tcb@temp=\box75
+\tcb@temp=\box76
+\tcb@temp=\box77
+\tcb@out=\write4
+\tcb@record@out=\write5
 ) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen288
 \WF@size=\dimen289
-\c@WF@wrappedlines=\count297
-\WF@box=\box70
-\WF@everypar=\toks35
+\c@WF@wrappedlines=\count301
+\WF@box=\box78
+\WF@everypar=\toks37
 Package: wrapfig 2003/01/31  v 3.6
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count298
-\mult@box=\box71
+\c@tracingmulticols=\count302
+\mult@box=\box79
 \multicol@leftmargin=\dimen290
-\c@unbalance=\count299
-\c@collectmore=\count300
-\doublecol@number=\count301
-\multicoltolerance=\count302
-\multicolpretolerance=\count303
+\c@unbalance=\count303
+\c@collectmore=\count304
+\doublecol@number=\count305
+\multicoltolerance=\count306
+\multicolpretolerance=\count307
 \full@width=\dimen291
 \page@free=\dimen292
 \premulticols=\dimen293
 \postmulticols=\dimen294
 \multicolsep=\skip91
 \multicolbaselineskip=\skip92
-\partial@page=\box72
-\last@line=\box73
+\partial@page=\box80
+\last@line=\box81
 \maxbalancingoverflow=\dimen295
-\mult@rightbox=\box74
-\mult@grightbox=\box75
-\mult@gfirstbox=\box76
-\mult@firstbox=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
-\@tempa=\box84
-\@tempa=\box85
+\mult@rightbox=\box82
+\mult@grightbox=\box83
+\mult@gfirstbox=\box84
+\mult@firstbox=\box85
 \@tempa=\box86
 \@tempa=\box87
 \@tempa=\box88
@@ -560,85 +580,102 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box112
 \@tempa=\box113
 \@tempa=\box114
-\c@minrows=\count304
-\c@columnbadness=\count305
-\c@finalcolumnbadness=\count306
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\c@minrows=\count308
+\c@columnbadness=\count309
+\c@finalcolumnbadness=\count310
 \last@try=\dimen296
 \multicolovershoot=\dimen297
 \multicolundershoot=\dimen298
-\mult@nat@firstbox=\box115
-\colbreak@box=\box116
-\mc@col@check@num=\count307
-) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
-Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+\mult@nat@firstbox=\box123
+\colbreak@box=\box124
+\mc@col@check@num=\count311
 ) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 112.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)) (/usr/share/texlive/texmf-dist/tex/latex/ae/ae.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/tex-gyre/tgadventor.sty
+Package: tgadventor 2009/09/10 v1.2 TeX Gyre Adventor as default sans serif family
+ (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))) (/usr/share/texlive/texmf-dist/tex/latex/ae/ae.sty
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
  (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\enitkv@toks@=\toks36
+\enitkv@toks@=\toks38
 \labelindent=\skip93
 \enit@outerparindent=\dimen299
-\enit@toks=\toks37
-\enit@inbox=\box117
-\enit@count@id=\count308
-\enitdp@description=\count309
+\enit@toks=\toks39
+\enit@inbox=\box125
+\enit@count@id=\count312
+\enitdp@description=\count313
 ) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
  (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen300
-\ar@mcellbox=\box118
+\ar@mcellbox=\box126
 \extrarowheight=\dimen301
-\NC@list=\toks38
+\NC@list=\toks40
 \extratabsurround=\skip94
 \backup@length=\skip95
-\ar@cellbox=\box119
+\ar@cellbox=\box127
 )
-\everycr=\toks39
+\everycr=\toks41
 \minrowclearance=\skip96
 )
 \leftimgwidth=\skip97
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count310
-\l__pdf_internal_box=\box120
+\l__kernel_color_stack_int=\count314
+\l__pdf_internal_box=\box128
 ) (./poster_landscape.aux)
 \openout1 = `poster_landscape.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
-LaTeX Font Info:    ... okay on input line 58.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Trying to load font information for T1+aess on input line 60.
+ (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
+\scratchcounter=\count315
 \scratchdimen=\dimen302
-\scratchbox=\box121
-\nofMPsegments=\count312
-\nofMParguments=\count313
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count314
+\scratchbox=\box129
+\nofMPsegments=\count316
+\nofMParguments=\count317
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count318
 \MPscratchDim=\dimen303
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
-\everyMPtoPDFconversion=\toks41
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
+\everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -653,15 +690,15 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: landscape 
-* h-part:(L,W,R)=(12.46262pt, 962.9455pt, 12.46262pt)
-* v-part:(T,H,B)=(12.46262pt, 673.81259pt, 12.46262pt)
-* \paperwidth=987.87073pt
-* \paperheight=698.73782pt
-* \textwidth=962.9455pt
-* \textheight=673.81259pt
-* \oddsidemargin=-59.80737pt
-* \evensidemargin=-59.80737pt
-* \topmargin=-96.80737pt
+* h-part:(L,W,R)=(12.80386pt, 989.3124pt, 12.80386pt)
+* v-part:(T,H,B)=(12.80386pt, 692.2626pt, 12.80386pt)
+* \paperwidth=1014.92012pt
+* \paperheight=717.87033pt
+* \textwidth=989.3124pt
+* \textheight=692.2626pt
+* \oddsidemargin=-59.46613pt
+* \evensidemargin=-59.46613pt
+* \topmargin=-96.46613pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -682,50 +719,73 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <tables/qrcode.png, id=29, 200.75pt x 200.75pt>
 File: tables/qrcode.png Graphic file (type png)
 <use tables/qrcode.png>
-Package pdftex.def Info: tables/qrcode.png  used on input line 106.
-(pdftex.def)             Requested size: 57.77437pt x 57.7749pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 106.
+Package pdftex.def Info: tables/qrcode.png  used on input line 108.
+(pdftex.def)             Requested size: 59.35632pt x 59.3555pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 108.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 106.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 108.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <tables/icml_logo.png, id=31, 1023.825pt x 644.4075pt>
 File: tables/icml_logo.png Graphic file (type png)
 <use tables/icml_logo.png>
-Package pdftex.def Info: tables/icml_logo.png  used on input line 106.
-(pdftex.def)             Requested size: 144.43594pt x 90.90472pt.
+Package pdftex.def Info: tables/icml_logo.png  used on input line 108.
+(pdftex.def)             Requested size: 148.39081pt x 93.39244pt.
 <images/Universitaet_Logo_RGB.pdf, id=32, 54.02504pt x 28.452pt>
 File: images/Universitaet_Logo_RGB.pdf Graphic file (type pdf)
 <use images/Universitaet_Logo_RGB.pdf>
-Package pdftex.def Info: images/Universitaet_Logo_RGB.pdf  used on input line 106.
-(pdftex.def)             Requested size: 77.0374pt x 40.57228pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 135.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
+Package pdftex.def Info: images/Universitaet_Logo_RGB.pdf  used on input line 108.
+(pdftex.def)             Requested size: 89.03448pt x 46.89078pt.
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <10> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 108.
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <24.88> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 108.
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <20.74> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 108.
+LaTeX Font Info:    Trying to load font information for TS1+aess on input line 137.
+LaTeX Font Info:    No file TS1aess.fd. on input line 137.
+
+
+LaTeX Font Warning: Font shape `TS1/aess/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `textbullet' on input line 137.
+
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+
+LaTeX Font Warning: Font shape `T1/aess/m/sc' undefined
+(Font)              using `T1/aess/m/n' instead on input line 137.
+
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <14.4> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 137.
 Missing character: There is no ; in font nullfont!
- (./tables/rel_improvement_supervised.tex)
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <10> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 236.
+LaTeX Font Info:    Trying to load font information for T1+aer on input line 236.
+(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+) (./tables/rel_improvement_supervised.tex)
 <tables/clf_weight_density_from_training.png, id=33, 419.6478pt x 277.5168pt>
 File: tables/clf_weight_density_from_training.png Graphic file (type png)
 <use tables/clf_weight_density_from_training.png>
-Package pdftex.def Info: tables/clf_weight_density_from_training.png  used on input line 229.
-(pdftex.def)             Requested size: 270.60182pt x 178.95673pt.
+Package pdftex.def Info: tables/clf_weight_density_from_training.png  used on input line 236.
+(pdftex.def)             Requested size: 278.1953pt x 183.97891pt.
+LaTeX Font Info:    Font shape `T1/aess/b/n' in size <9> not available
+(Font)              Font shape `T1/aess/bx/n' tried instead on input line 236.
  (./tables/rel_improvement_embedded.tex) (./tables/bottleneck-improvement.tex)
 <tables/no_bottleneck_pooling_density_histogram.png, id=34, 406.3983pt x 279.9258pt>
 File: tables/no_bottleneck_pooling_density_histogram.png Graphic file (type png)
 <use tables/no_bottleneck_pooling_density_histogram.png>
-Package pdftex.def Info: tables/no_bottleneck_pooling_density_histogram.png  used on input line 229.
-(pdftex.def)             Requested size: 135.3009pt x 93.19588pt.
+Package pdftex.def Info: tables/no_bottleneck_pooling_density_histogram.png  used on input line 236.
+(pdftex.def)             Requested size: 153.00824pt x 105.3905pt.
 <tables/bottleneck_pooling_density_histogram.png, id=35, 421.0932pt x 278.2395pt>
 File: tables/bottleneck_pooling_density_histogram.png Graphic file (type png)
 <use tables/bottleneck_pooling_density_histogram.png>
-Package pdftex.def Info: tables/bottleneck_pooling_density_histogram.png  used on input line 229.
-(pdftex.def)             Requested size: 135.3009pt x 89.40356pt.
+Package pdftex.def Info: tables/bottleneck_pooling_density_histogram.png  used on input line 236.
+(pdftex.def)             Requested size: 153.00824pt x 101.10016pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -736,33 +796,45 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--344
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 
  []
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-(./poster_landscape.bbl)
+(./poster_landscape.bbl
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <8> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 7.
+)
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
  [2
 
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./tables/qrcode.png> <./tables/icml_logo.png> <./images/Universitaet_Logo_RGB.pdf> <./tables/clf_weight_density_from_training.png> <./tables/no_bottleneck_pooling_density_histogram.png> <./tables/bottleneck_pooling_density_histogram.png>] (./poster_landscape.aux) ) 
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} <./tables/qrcode.png> <./tables/icml_logo.png> <./images/Universitaet_Logo_RGB.pdf> <./tables/clf_weight_density_from_training.png> <./tables/no_bottleneck_pooling_density_histogram.png> <./tables/bottleneck_pooling_density_histogram.png>] (./poster_landscape.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 17953 strings out of 480623
- 352917 string characters out of 5906693
- 635392 words of memory out of 6000000
- 33440 multiletter control sequences out of 15000+600000
- 580054 words of font info for 82 fonts, out of 8000000 for 9000
+ 20371 strings out of 480623
+ 406800 string characters out of 5906693
+ 691297 words of memory out of 6000000
+ 35791 multiletter control sequences out of 15000+600000
+ 574483 words of font info for 108 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 68i,17n,75p,473b,1056s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on poster_landscape.pdf (1 page, 820265 bytes).
+ 68i,17n,75p,894b,1056s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on poster_landscape.pdf (1 page, 891758 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 165 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
