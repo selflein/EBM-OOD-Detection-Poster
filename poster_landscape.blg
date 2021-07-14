@@ -1,11 +1,11 @@
 This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: poster_landscape.aux
-The style file: plain.bst
+The style file: abbrv.bst
 Database file #1: paper.bib
 You've used 4 entries,
             2118 wiz_defined-function locations,
-            523 strings with 5042 characters,
+            523 strings with 4758 characters,
 and the built_in function-call counts, 1373 in all, are:
 = -- 123
 > -- 96
