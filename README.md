@@ -1,16 +1,14 @@
-# LaTex Poster for TOM-Net (CVPR 2018)
+# LaTex Poster for "On Out-of-distribution Detection with Energy-based Models"
 
-## Poster Example
+> [On Out-of-distribution Detection with Energy-based Models]() \
+Sven Elflein, Bertrand Charpentier, Daniel Zügner, Stephan Günnemann \
+ICML 2021, Workshop on Uncertainty & Robustness in Deep Learning.
+
+
 <p align="center">
-    <img src='images/sample.png' width="800" > <br>
+    <img src='poster_landscape.png' width="800" > <br>
 </p>
 
-## Introduction
-This code stores the LaTex source code for building the poster for TOM-Net (CVPR 2018). This poster is based on the amazing [LaTex Poster Template](http://www.brian-amberg.de/uni/poster/). You may try to design your own poster based on this example. Please refer to (http://www.brian-amberg.de/uni/poster/) for more examples and FAQ.
+## Acknowledgments
 
-- Open `poster_landscape.pdf` to see the built poster.
-
-- Type `Make` to rebuild the poster.
-
-## More LaTex Poster Examples
-- [PS-FCN: A Flexible Learning Framework for Photometric Stereo (ECCV 2018)](https://github.com/guanyingc/PS-FCN_Poster_LaTex)
+Based on https://github.com/guanyingc/TOM-Net_Poster_LaTex.
